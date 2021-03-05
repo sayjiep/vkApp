@@ -15,7 +15,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // ошибка?
         APIManager.shared.getPost(id: "post1", imageID: "1") {res1 in
             self.posts.append(res1!)
             APIManager.shared.getPost(id: "post2", imageID: "2") {res2 in
